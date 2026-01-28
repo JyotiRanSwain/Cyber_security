@@ -59,7 +59,7 @@ No firewall restriction
 Step 3: Assess risk
 High likelihood + high impact = High Risk
 ✔ Document findings in a markdown file.
-
+---
 ### OWASP Top 10 (Web Application Security)
 The OWASP Top 10 lists the most critical web application security risks.
 
