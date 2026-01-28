@@ -65,16 +65,20 @@ High likelihood + high impact = High Risk
 ### OWASP Top 10 (Web Application Security)
 The OWASP Top 10 lists the most critical web application security risks.
 
-🔥 Most Important OWASP Risks
-| ID  | Risk                      | Description                             |
-| --- | ------------------------- | --------------------------------------- |
-| A01 | Broken Access Control     | Unauthorized access to resources        |
-| A02 | Cryptographic Failures    | Weak or missing encryption              |
-| A03 | Injection                 | SQL, OS, LDAP injection                 |
-| A05 | Security Misconfiguration | Default configs, open ports             |
-| A06 | Vulnerable Components     | Outdated libraries                      |
-| A07 | Auth Failures             | Weak authentication                     |
-| A10 | SSRF                      | Server fetches attacker-controlled URLs |
+🔹 OWASP Top 10 Overview
+| OWASP ID | Risk                      | Description            | Lab Exercise               |
+| -------- | ------------------------- | ---------------------- | -------------------------- |
+| **A01**  | Broken Access Control     | Unauthorized access    | Access admin pages in DVWA |
+| **A02**  | Cryptographic Failures    | Weak encryption        | Capture HTTP traffic       |
+| **A03**  | Injection                 | SQL/OS/LDAP injection  | `' OR '1'='1` in DVWA      |
+| **A04**  | Insecure Design           | Poor architecture      | Identify missing controls  |
+| **A05**  | Security Misconfiguration | Default/open settings  | Nmap / Nessus scan         |
+| **A06**  | Vulnerable Components     | Outdated libraries     | `npm audit`, `pip-audit`   |
+| **A07**  | Auth Failures             | Weak login/session     | JWT tampering              |
+| **A08**  | Integrity Failures        | Unsafe deserialization | Deserialization lab        |
+| **A09**  | Logging Failures          | No attack detection    | Check DVWA logs            |
+| **A10**  | SSRF                      | Server fetch abuse     | Juice Shop SSRF lab        |
+
 
 
 🧪 OWASP Hands-on Labs
