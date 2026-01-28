@@ -30,3 +30,4 @@ echo "secret-data" > data.txt
 # Encrypt the file
 openssl enc -aes-256-cbc -salt -in data.txt -out data.enc
 
+---
