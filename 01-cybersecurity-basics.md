@@ -1,27 +1,31 @@
-# 🔐 Cybersecurity Basics – Foundations
+# 🔐 Cybersecurity Basics – Detailed Guide (Phase 1)
 
-This document covers the **core cybersecurity fundamentals** required for every security role, especially **DevOps, Cloud Security, and DevSecOps engineers**.
-
-> 🎯 Goal: Understand **why security exists**, **how attacks happen**, and **how risks are identified and reduced**.
+This guide covers the **core foundations of cybersecurity** every DevOps & Cloud Engineer must know.
+It focuses on **concepts + hands-on labs + real-world mapping**.
 
 ---
 
-## 📌 1. CIA Triad (Core Security Principles)
+## 📌 1️⃣ CIA Triad (Confidentiality, Integrity, Availability)
 
-The **CIA Triad** defines the three main goals of cybersecurity.
+The **CIA Triad** is the foundation of cybersecurity.  
+Every security control must support **at least one** of these pillars.
 
-### 🔒 Confidentiality
-Ensures that **only authorized users** can access sensitive data.
+### 🔹 CIA Triad Overview
 
-**Examples:**
-- Encryption (TLS, AES)
-- Access control (IAM, RBAC)
-- VPN, private networks
+| Principle | Meaning | Examples / Practice |
+|--------|--------|--------------------|
+| **Confidentiality** | Only authorized users can access data | - Encrypt sensitive data (AES, TLS)<br>- Restrict access using IAM & RBAC<br>- Test unauthorized access |
+| **Integrity** | Data must not be altered without authorization | - File hash verification (MD5 / SHA256)<br>- Git version control<br>- Detect file tampering |
+| **Availability** | Systems must be accessible when needed | - Monitor uptime (Prometheus, CloudWatch)<br>- Use redundancy & failover<br>- DoS simulation (lab only) |
 
-**Hands-on Practice:**
+---
+
+### 🧪 Hands‑On Exercises (CIA Triad)
+
+#### ✅ Confidentiality
 ```bash
-# Generate SSH key
-ssh-keygen
+# Create a file
+echo "secret-data" > data.txt
 
-# Encrypt a file
+# Encrypt the file
 openssl enc -aes-256-cbc -salt -in data.txt -out data.enc
