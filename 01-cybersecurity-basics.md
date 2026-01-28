@@ -63,6 +63,14 @@ High likelihood + high impact = High Risk
 
 ---
 ### OWASP Top 10 (Web Application Security)
+What is OWASP?
+OWASP stands for Open Web Application Security Project.
+
+Why OWASP is Important
+1.  Industry Standard: Most companies follow OWASP guidelines for web app security.
+2.  Helps Developers and Security Professionals: Learn how to prevent common vulnerabilities.
+3.  Free and Open: Anyone can access OWASP resources online.
+
 The OWASP Top 10 lists the most critical web application security risks.
 
 🔹 OWASP Top 10 Overview
