@@ -51,7 +51,7 @@ Risk: Server compromise
 Step 1: Find vulnerabilities
 ```bash
 nmap -sV target_ip
-
+```
 Step 2: Identify threat
 Internet-facing service
 No firewall restriction
@@ -82,3 +82,4 @@ Run using Docker:
 
 ```bash
 docker run -d -p 3000:3000 bkimminich/juice-shop
+```
