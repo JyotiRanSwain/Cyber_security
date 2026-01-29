@@ -102,7 +102,7 @@ Prevents MITM attacks
 ## 🧪 Hands-On: Inspect TLS
 ```
 openssl s_client -connect google.com:443
-""
+```
 
 Check:
 Certificate issuer
@@ -122,15 +122,19 @@ Cloud firewall (AWS Security Group)
 ```
 iptables -L
 ```
+
 Block SSH from all:
+
 ```
 iptables -A INPUT -p tcp --dport 22 -j DROP
 ```
+
 Allow SSH only from your IP:
 
 ```
 iptables -A INPUT -p tcp -s YOUR_IP --dport 22 -j ACCEPT
 ```
+
 #### 🔐 Security Rule
 Default-deny is safer than allow-all.
 ---
@@ -176,6 +180,7 @@ TLS handshake
 Suspicious IPs
 
 Filters:
+
 ```
 http
 dns
