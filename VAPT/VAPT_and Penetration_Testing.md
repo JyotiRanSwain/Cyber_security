@@ -290,5 +290,7 @@ Employee dashboards
 
 ### When to Use Which?
 Black Box → Test how attackers see you
+
 Gray Box → Test what logged-in users can abuse
+
 White Box → Test how secure your system really is
