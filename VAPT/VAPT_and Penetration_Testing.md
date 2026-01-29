@@ -2,10 +2,6 @@ reff: https://www.youtube.com/watch?v=jX0hhhaeh-g
 
 
 ### what is vapt?
-Here’s a **clear, detailed note** you can use for study, documentation, or training 👇
-
----
-
 ## Why VAPT (Vulnerability Assessment & Penetration Testing) Is Necessary
 
 VAPT is essential to **proactively identify and reduce security risks** before attackers can exploit them. In today’s threat landscape, relying only on firewalls or antivirus is not enough.
