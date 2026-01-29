@@ -401,17 +401,3 @@ To protect against scans:
 ✔ Banner grabbing reveals weaknesses
 ✔ ARP scan is king inside LAN
 ✔ Firewalls can be evaded if misconfigured
-
----
-
-📌 **Next recommended labs**:
-
-* Nmap vs Windows Firewall
-* Scan Metasploitable 2 fully
-* Wireshark + Nmap traffic analysis
-
-If you want, I can:
-
-* Convert this into **PDF / exam notes**
-* Create **hands‑on lab steps**
-* Map each scan to **real attacks**
