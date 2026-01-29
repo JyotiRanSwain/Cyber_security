@@ -37,17 +37,17 @@ A port identifies which service is running on a machine.
 
 ### 🧪 Hands-On: List Open Ports
 Linux / Kali
-"""
+```
 ss -tulnp
-"""
+```
 or
-"""
+```
 netstat -tulnp
-"""
+```
 Windows
-"""
+```
 netstat -ano
-"""
+```
 
 📌 Security Insight
 If a port is open → it is attackable.
@@ -55,22 +55,22 @@ If a port is open → it is attackable.
 ## 🌍 3️⃣ DNS (Domain Name System)
 ### What DNS Does
 Converts:
-"""
+```
 example.com → IP address
-"""
+```
 #### DNS Security Risks
 DNS Spoofing
 DNS Cache Poisoning
 Malicious redirects
 
 ### 🧪 Hands-On: DNS Testing
-"""
+```
 nslookup google.com
-"""
+```
 
-"""
+```
 dig google.com
-"""
+```
 Check:
 A record
 TTL
@@ -89,9 +89,9 @@ Trusted resolvers
 | Security        | Unsafe     | Secure    |
 
 ### 🧪 Hands-On: Capture HTTP Traffic
-"""
+```
 tcpdump -i eth0 port 80
-"""
+```
 
 ## 🔐 5️⃣ TLS / SSL (Very Important)
 #### What TLS Does
@@ -100,7 +100,7 @@ Verifies server identity
 Prevents MITM attacks
 ---
 ## 🧪 Hands-On: Inspect TLS
-"""
+```
 openssl s_client -connect google.com:443
 ""
 
@@ -119,18 +119,18 @@ Cloud firewall (AWS Security Group)
 ---
 
 ### 🧪 Hands-On: Linux Firewall
-"""
+```
 iptables -L
-"""
+```
 Block SSH from all:
-"""
+```
 iptables -A INPUT -p tcp --dport 22 -j DROP
-"""
+```
 Allow SSH only from your IP:
 
-"""
+```
 iptables -A INPUT -p tcp -s YOUR_IP --dport 22 -j ACCEPT
-"""
+```
 #### 🔐 Security Rule
 Default-deny is safer than allow-all.
 ---
@@ -153,18 +153,18 @@ NAT hides, firewall blocks.
 ### tcpdump (CLI)
 Capture traffic:
 
-"""
+```
 tcpdump -i eth0
-"""
+```
 
 Filter HTTP:
-"""
+```
 tcpdump -i eth0 port 80
-"""
+```
 Save to file:
-"""
+```
 tcpdump -i eth0 -w capture.pcap
-"""
+```
 
 ----
 
@@ -176,12 +176,12 @@ TLS handshake
 Suspicious IPs
 
 Filters:
-"""
+```
 http
 dns
 tcp.port == 80
 ip.addr == 10.10.6.36
-"""
+```
 
 #### 🔍 Security Use Case
 Detect data leakage
